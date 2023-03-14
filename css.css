@@ -1,0 +1,116 @@
+/* CSS Document */
+
+/*----------Variables----------*/
+
+:root{
+	--color-fondo: #CCDAD1;
+	--color-contenedor: #788585;
+	--color-seccion: #9CAEA9;
+	--color-imagen_cv: #6F6866;
+	--color-texto: #38302E;
+	--color-selec-on: #851e1e;
+}
+
+/*----------Body----------*/
+
+body{
+	background-color: var(--color-fondo);
+	color: var(--color-texto);
+	font-family:sans-serif;
+	display: grid;
+	margin: 10px;
+}
+
+/*----------Contenedor General----------*/
+
+.contenedor{
+	background-color: var(--color-contenedor);
+	padding: 10px;
+	border-radius: 30px;
+	width: 80%;
+	margin: auto;
+}
+
+.seccion{
+	display: grid;
+    align-content: center;
+    justify-content: center;
+	background-color: var(--color-seccion);
+}
+
+.imagen {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.imagen_cv{
+	background-color: var(--color-imagen_cv);
+	width: 210px;
+	height: 210px;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.imagen_cv img{
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 1 solid black;
+}
+
+.titulo {
+	height: 250px;
+	margin-left: 260px;
+	text-align: center;
+	border: 2 solid black;
+	border-radius: 30px;
+}
+
+.titulo h1{
+	font-size: 75px;
+	margin: 0;
+}
+
+.titulo p{
+	font-size: 25px;
+	margin: 0;
+}
+
+/*----------Contenedor Info----------*/
+
+.contInfo{
+	background-color: var(--color-contenedor);
+	padding: 10px;
+	border-radius: 30px;
+	margin: 15px auto 0;
+	width: 80%;
+}
+
+.scInfo{
+	display:block;
+	background-color: var(--color-seccion);
+	width: auto;
+	border-radius: 30px;
+}
+
+.contTitDat{
+	width: auto;
+	padding: 5px;
+	margin: 10px 40px;
+	color: var(--color-texto);
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+}
+
+.contDat{
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+}
+
+.desplegado, .contTitDat:hover {
+	color: var(--color-selec-on);
+}
