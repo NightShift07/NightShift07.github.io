@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
     <title>Curriculum</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+<!--/*----------Open Graph----------*/-->    
+    <meta property="og:title" content="EDteam - Educación con honestidad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ed.team/">
+    <meta property="og:image" content="https://ed.teamhttps://drupal.ed.team/sites/default/files/inline-images/EDteam-card.jpg">
 </head>
 <body>
 
@@ -14,7 +23,7 @@
     <div class="contenedor">
         <div class="imagen seccion">
             <div class="imagen_cv">
-                <img src="https://randomuser.me/api/portraits/women/65.jpg">
+                <img src="/img/Sarah_Zhang.jpg">
             </div>
         </div>
         <div class="titulo seccion">
@@ -30,17 +39,33 @@
             <li>
                 <div class="contTitDat" ><h3>Datos Personales</h3></div>
                 <div class="contDat">
-                    <h3>Contacto</h3>
-                    <p>
-                        C. Padre Pedro Ayala 41005<br>
-                        Sevilla, España<br>
-                        sarah.zhang@sevmail.com<br>
-                        (+34)-(954)-746-381<br>
-                    </p>
-                    <h3>Lugar / Fecha de Nacimiento</h3>
-                    <p>Sevilla / 1989-11-23</p>
-                    <h3>Nacionalidad</h3>
-                    <p>Española</p>
+                    <table class="contDatTable">
+                        <tr>
+                            <td>
+                                <h3>Contacto</h3>
+                                <p class="contDatActMap">
+                                    C. Padre Pedro Ayala 41005<br>
+                                    Sevilla, España
+                                    <span class="material-icons-outlined">
+                                        public
+                                    </span>
+                                    <span class="contDatMap">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.348398212511!2d-5.967018592463462!3d37.38495901251345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ebfa89a7825%3A0x2c37cfd357fa3283!2sC.%20Padre%20Pedro%20Ayala%2C%2041005%20Sevilla%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1678774295133!5m2!1ses-419!2sar" width="300" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </span>
+                                    <br>
+                                    sarah.zhang@sevmail.com<br>
+                                    (+34)-(954)-746-381<br>
+                                </p>
+                                
+                            </td>
+                            <td>
+                                <h3>Lugar / Fecha de Nacimiento</h3>
+                                <p>Sevilla / 1989-11-23</p>
+                                <h3>Nacionalidad</h3>
+                                <p>Española</p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </li>
         </ul>
@@ -96,12 +121,12 @@
             <li>
                 <div class="contTitDat"><h3>Competencias</h3></div>
                 <div class="contDat">
-                    <p>
+                    
                         <ul>
                             <li>Habilidades de comunicacion avanzada</li>
                             <li>Periodismo</li>
                         </ul>
-                    </p>
+                    
                 </div>
             </li>
         </ul>

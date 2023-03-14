@@ -1,14 +1,52 @@
 /* CSS Document */
 
+/*----------Fuentes----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap');
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
+
 /*----------Variables----------*/
 
 :root{
+/*
 	--color-fondo: #CCDAD1;
 	--color-contenedor: #788585;
 	--color-seccion: #9CAEA9;
 	--color-imagen_cv: #6F6866;
 	--color-texto: #38302E;
 	--color-selec-on: #851e1e;
+*/
+	--color-fondo: #311E10;
+	--color-contenedor: #E18849;
+	--color-seccion: #E8B973;
+	--color-imagen_cv: #E18849;
+	--color-texto: #DD5B2C;
+	--color-selec-on: #873D1E;
+
 }
 
 /*----------Body----------*/
@@ -61,6 +99,7 @@ body{
 }
 
 .titulo {
+	font-family: 'Shadows Into Light', cursive;
 	height: 250px;
 	margin-left: 260px;
 	text-align: center;
@@ -69,11 +108,11 @@ body{
 }
 
 .titulo h1{
-	font-size: 75px;
+	font-size: 77px;
 	margin: 0;
 }
 
-.titulo p{
+.titulo h3{
 	font-size: 25px;
 	margin: 0;
 }
@@ -81,6 +120,8 @@ body{
 /*----------Contenedor Info----------*/
 
 .contInfo{
+	font-family: 'Caveat', cursive;
+	
 	background-color: var(--color-contenedor);
 	padding: 10px;
 	border-radius: 30px;
@@ -102,7 +143,7 @@ body{
 	color: var(--color-texto);
 	cursor: pointer;
 	border: none;
-	font-size: 15px;
+	font-size: 22px;
 }
 
 .contDat{
@@ -111,6 +152,54 @@ body{
 	overflow: hidden;
 }
 
+.contDat h3{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+.contDat p, dd, ul{
+	margin: 0 0 20px;
+	display: block;
+	font-size: 18px;
+}
+
+.contDatTable{
+	text-align: center;
+	width: 100%;
+}
+
+.contDatTable td{
+	width: 50%;
+}
+
+.contDatMap{
+	display: none;
+	position: relative;
+	background-color: var(--color-fondo);
+	z-index: 500;
+	padding: 0;
+	margin: 0;
+	bottom: 70px;
+	left: 30px;
+}
+
+.contDatMap iframe{
+	position: absolute;
+	background-color: var(--color-contenedor);
+	z-index: 500;
+	padding: 5px 5px;
+	border-radius: 5px;
+}
+
+.contDatActMap:hover .contDatMap{
+/*	text-decoration: underline;*/
+	display: inline-block;
+}
+
 .desplegado, .contTitDat:hover {
 	color: var(--color-selec-on);
+	transform: translateX(25);
+	text-decoration: underline;
 }
