@@ -1,0 +1,27 @@
+*{
+    font-size: 16px;
+}
+
+body {
+/*    background-image: url("../img/watercolor.jpg");*/
+    padding-left: 11em;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Script', Arial, sans-serif;
+}
+
+.navBar{
+    background-color: #911717;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+}

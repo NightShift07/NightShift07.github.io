@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/resources/css/css.css">
+    <!--Titulo-->
+    <title>La Casa de la Musica</title>
+    <!--Icono-->
+    <link rel="shortcut icon" href="resources/images/icon.ico" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="resources/css/css.css">
+    <!--Tipografia importada de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="pagHeader">
-        <iframe src="/pages/header.html"></iframe>
-    </div>
-    <div id="pagContent">
-        <iframe src="/pages/inicio.html"></iframe>
-    </div>
-    <div id="pagFooter">
-        <iframe src="/pages/footer.html"></iframe>
-    </div>
+    <!--Header-->
+    <header id="pagHeader">
+        <nav id="navBar">
+            <ul>
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./clientes.html">Nuestros Clientes</a></li>
+                <li><a href="./productos.html">Equipos / Instrumentos</a></li>
+                <li><a href="./contacto.html">Datos de contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Cuerpo de la web-->
+    <iframe src="./pages/inicio.html" id="pagContent"></iframe>
+    <!--Footer-->
+    <footer id="pagFooter">
+        <h3>Nuestras redes sociales</h3>
+        <ul>
+            <li><i class="fa-brands fa-square-whatsapp fa-beat-fade" style="color: #0dc143;"></i></li>
+        </ul>
+        Todos los derechos reservados &copy; 2023
+    </footer>
+    <!--Script de FontAwesome-->
+    <script src="https://kit.fontawesome.com/cfc62c5217.js" crossorigin="anonymous"></script>
 </body>
 </html>
