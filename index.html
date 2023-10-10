@@ -15,15 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Scripts-->
+    <script src="./resources/js/functions.js"></script>
     <!--Header-->
     <header id="pagHeader">
         <nav id="navBar">
-            <ul>
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./clientes.html">Nuestros Clientes</a></li>
-                <li><a href="./productos.html">Equipos / Instrumentos</a></li>
-                <li><a href="./contacto.html">Datos de contacto</a></li>
-            </ul>
+            <table>
+                <tr>
+                    <td><p onclick="chgIframe('inicio.html')"><i class="fa-solid fa-house" style="color: #ff0000;"></i> - Inicio</p></td>
+                    <td><p onclick="chgIframe('clientes.html')"><i class="fa-solid fa-users" style="color: #ff0000;"></i> - Nuestros Clientes</p></td>
+                    <td><p onclick="chgIframe('productos.html')"><i class="fa-solid fa-guitar" style="color: #ff0000;"></i> / <i class="fa-solid fa-microphone" style="color: #ff0000;"></i> - Equipos / Instrumentos</p></td>
+                    <td><p onclick="chgIframe('contacto.html')"><i class="fa-solid fa-address-card" style="color: #ff0000;"></i> - Datos de contacto</p></td>
+                </tr>
+            </table>
         </nav>
     </header>
     <!--Cuerpo de la web-->

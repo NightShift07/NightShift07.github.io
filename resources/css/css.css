@@ -1,10 +1,16 @@
+/*--Variables--*/
+:root{
+    --size-text: 16px;
+}
+
 *{
-    font-size: 16px;
+    font-size: var(--size-text);
+    text-align: center;
 }
 
 body {
 /*    background-image: url("../img/watercolor.jpg");*/
-    padding-left: 11em;
+    width: 100%;
     font-family: 'Petit Formal Script', cursive;
     font-family: 'Script', Arial, sans-serif;
 }
@@ -15,13 +21,29 @@ body {
     padding-bottom: 10px;
 }
 
+table{
+    border: 2px solid #911717;
+}
+
+td{
+    height: 25px;
+    width: calc((100% / 4) + 20px);
+    border: 1px solid;
+}
+
+p{
+    color: chocolate;
+}
+
+p:hover{
+    color: #911717;
+    font-size: calc(var(--size-text) + 2px);
+}
+
+iframe{
+    width: 95%;
+}
+
 ul{
-    list-style-type: none;
-}
-
-li{
-    list-style-type: none;
-}
-
-a{
+    list-style: none;
 }
