@@ -6,13 +6,25 @@
 *{
     font-size: var(--size-text);
     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-/*    background-image: url("../img/watercolor.jpg");*/
-    width: 100%;
+    
+    background-image: url("../images/musical-background-2842924_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    width: 95%;
     font-family: 'Petit Formal Script', cursive;
     font-family: 'Script', Arial, sans-serif;
+}
+
+header, footer{
+    display: inline-table;
 }
 
 .navBar{
@@ -22,13 +34,13 @@ body {
 }
 
 table{
-    border: 2px solid #911717;
+    border-style: none;
 }
 
 td{
-    height: 25px;
-    width: calc((100% / 4) + 20px);
-    border: 1px solid;
+    width: 200px;
+    height: 100px;
+    border: none;
 }
 
 p{
@@ -42,8 +54,7 @@ p:hover{
 
 iframe{
     width: 95%;
-}
-
-ul{
-    list-style: none;
+    height: 75%;
+    border: none;
+    text-align: center;
 }
