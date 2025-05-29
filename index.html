@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos-->
+    <link rel="stylesheet" href="estilos/css.css">
     <!--Titulo-->
-    <title>La Casa de la Musica</title>
-    <!--Icono-->
-    <link rel="shortcut icon" href="resources/images/icon.ico" type="image/x-icon">
-    <!--Css-->
-    <link rel="stylesheet" href="resources/css/css.css">
-    <!--Tipografia importada de Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <title>Talento Tech 2025 - Front-End Js</title>
 </head>
 <body>
-    <!--Scripts-->
-    <script src="./resources/js/functions.js"></script>
     <!--Header-->
-    <header id="pagHeader">
-        <nav id="navBar">
-            <table>
-                <tr>
-                    <td><p onclick="chgIframe('inicio.html')"><i class="fa-solid fa-house" style="color: #ff0000;"></i> - Inicio</p></td>
-                    <td><p onclick="chgIframe('clientes.html')"><i class="fa-solid fa-users" style="color: #ff0000;"></i> - Nuestros Clientes</p></td>
-                    <td><p onclick="chgIframe('productos.html')"><i class="fa-solid fa-guitar" style="color: #ff0000;"></i> / <i class="fa-solid fa-microphone" style="color: #ff0000;"></i> - Equipos / Instrumentos</p></td>
-                    <td><p onclick="chgIframe('contacto.html')"><i class="fa-solid fa-address-card" style="color: #ff0000;"></i> - Datos de contacto</p></td>
-                </tr>
-            </table>
-        </nav>
+    <header class="pagHeader">
+        <a href="#"><img class="logo" src="img/logo_100.png" alt="logo"></a>
+        <div>
+            <ul class="navBar" id="navBar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#secNosotros">Nosotros</a></li>
+                <li><a href="#secProductos">Productos</a></li>
+                <li><a href="#secServicios">Servicios</a></li>
+                <li><a href="#secContacto">Contacto</a></li>
+            </ul>
+        </div>
     </header>
-    <!--Cuerpo de la web-->
-    <iframe src="./pages/inicio.html" id="pagContent"></iframe>
+
+    <!--Main-->
+    <main id="pagMain">
+        <section id="secNosotros" class="secNosotros">
+            
+        </section>
+
+        <section id="secProductos" class="secProductos">
+            
+        </section>
+        
+        <section id="secServicios" class="secServicios">
+            
+        </section>
+
+        <section id="secContacto" class="secContacto">
+            <form action="https://formspree.io/f/xdkgrrnl" method="POST">
+                <label for="frmName">Nombre:</label><br /><input type="text" name="frmName" id="frmName" placeholder="Escribe tu nombre" required><br />
+                <label for="frmEmail">Correo Electronico:</label><br /><input type="email" name="frmEmail" id="frmEmail" placeholder="Escribe tu email" required><br />
+                <label for="frmMsg">Mensaje:</label><br /><textarea name="frmMsg" id="frmMsg" rows="4" cols="50" placeholder="Escribe tu mensaje" required></textarea><br />
+                <input type="submit" value="Contactar">
+            </form>
+        </section>
+    </main>
     <!--Footer-->
     <footer id="pagFooter">
-        <h3>Nuestras redes sociales</h3>
-        <i class="fa-brands fa-square-whatsapp fa-beat-fade" style="color: #0dc143;"></i></li>
-        <br /><br />
-        Todos los derechos reservados &copy; 2023
+        <p>Todos los derechos reservados. &copy; 2023</p>
     </footer>
-    <!--Script de FontAwesome-->
-    <script src="https://kit.fontawesome.com/cfc62c5217.js" crossorigin="anonymous"></script>
 </body>
 </html>
