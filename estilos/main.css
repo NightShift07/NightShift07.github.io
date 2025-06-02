@@ -1,0 +1,78 @@
+/* Main */
+
+.secNosotros{
+    background-image: url('../img/nosotros.jpg');
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & secNosotrosContent{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+.secProductos{
+    background-image: url('../img/productos.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+    background-color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+
+    productos-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        producto{
+            width: 23%;
+            min-width: 250px;
+            margin: 15px 0;
+            padding: 10px 12px;
+            border-radius: 20px;
+            border: 1px solid #cce7d0;
+            cursor: pointer;
+
+            img{
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.secServicios{
+    background-image: url('../img/servicios.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+    background-color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+}
+
+.secContacto{
+    background-image: url('../img/contacto.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+    background-color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+}

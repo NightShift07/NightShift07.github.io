@@ -7,7 +7,7 @@
     <!--Estilos-->
     <link rel="stylesheet" href="estilos/css.css">
     <!--Titulo-->
-    <title>Talento Tech 2025 - Front-End Js</title>
+    <title>Guitar World</title>
 </head>
 <body>
     <!--Header-->
@@ -25,20 +25,81 @@
     </header>
 
     <!--Main-->
-    <main id="pagMain">
-        <section id="secNosotros" class="secNosotros">
-            
+    <main>
+        <section class="secNosotros" id="secNosotros">
+            <div class="secNosotrosContent">
+                <h2>Nosotros</h2>
+                <p>Somos una empresa dedicada a brindar soluciones tecnológicas innovadoras.</p>
+            </div>
         </section>
 
-        <section id="secProductos" class="secProductos">
-            
-        </section>
-        
-        <section id="secServicios" class="secServicios">
-            
+        <section class="secProductos" id="secProductos">
+            <div class="secProductosContent">
+                <h2>Productos</h2>
+                <p>Ofrecemos una amplia gama de productos tecnológicos de alta calidad.</p>
+                <div class="productos-container">
+                    <div class="producto">
+                        <img src="img/productos/auriculares.jpg" alt="producto 1">
+                        <div class="producto-descripcion">
+                            <span>Lorem</span>
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="carrito">
+                            <i class="fal fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos-container">
+                    <div class="producto">
+                        <img src="img/productos/auriculares.jpg" alt="producto 1">
+                        <div class="producto-descripcion">
+                            <span>Lorem</span>
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="carrito">
+                            <i class="fal fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos-container">
+                    <div class="producto">
+                        <img src="img/productos/auriculares.jpg" alt="producto 1">
+                        <div class="producto-descripcion">
+                            <span>Lorem</span>
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="carrito">
+                            <i class="fal fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos-container">
+                    <div class="producto">
+                        <img src="img/productos/auriculares.jpg" alt="producto 1">
+                        <div class="producto-descripcion">
+                            <span>Lorem</span>
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="carrito">
+                            <i class="fal fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="secContacto" class="secContacto">
+        <section class="secServicios" id="secServicios">
+            <div class="secServiciosContent">
+                <h2>Servicios</h2>
+                <p>Nuestros servicios están diseñados para satisfacer las necesidades de nuestros clientes.</p>
+            </div>
+        </section>
+
+        <section class="secContacto" id="secContacto">
             <form action="https://formspree.io/f/xdkgrrnl" method="POST">
                 <label for="frmName">Nombre:</label><br /><input type="text" name="frmName" id="frmName" placeholder="Escribe tu nombre" required><br />
                 <label for="frmEmail">Correo Electronico:</label><br /><input type="email" name="frmEmail" id="frmEmail" placeholder="Escribe tu email" required><br />
@@ -48,7 +109,8 @@
         </section>
     </main>
     <!--Footer-->
-    <footer id="pagFooter">
+    <footer class="pagFooter" id="pagFooter">
+        <p>Desarrollado por <a href="https://github.com/NightShift07">NightShift07</a></p>
         <p>Todos los derechos reservados. &copy; 2023</p>
     </footer>
 </body>

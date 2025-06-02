@@ -1,0 +1,27 @@
+/* Header */
+.pagHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #c0c0c0;
+    box-shadow: 0 5px 20px rgba(31, 31, 31, 0.685);
+    font-family: "Merriweather", sans-serif;
+    background-image: url(../img/header_1920.jpg);
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & li{
+        list-style: none;
+        padding: 0 20px;
+    }
+}
