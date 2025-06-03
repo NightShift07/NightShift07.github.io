@@ -2,50 +2,47 @@
 
 .secNosotros{
     background-image: url('../img/nosotros.jpg');
-    height: 95vh;
-    width: 100%;
     background-size: cover;
     background-position: top center;
+    height: 95vh;
+    width: 100%;
     padding: 0 50px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
-    & secNosotrosContent{
+    & .secNosotrosContent{
         width: 50%;
-        display: flex;
+        display:flex;
         flex-direction: column;
         align-items: flex-end;
         text-align: right;
+        color: darkgoldenrod;
     }
 }
 
 .secProductos{
     background-image: url('../img/productos.jpg');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 80px;
-    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: top center;
     text-align: center;
-    width: 100%;
 
-    productos-container{
+    .secProductosContent{
         display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
         flex-wrap: wrap;
-        justify-content: center;
 
-        producto{
+        .producto{
             width: 23%;
             min-width: 250px;
             margin: 15px 0;
-            padding: 10px 12px;
-            border-radius: 20px;
-            border: 1px solid #cce7d0;
+            padding: 10px 15px;
+            border-radius: 25px;
+            border: 1px solid #000000;
             cursor: pointer;
 
-            img{
+            & img{
                 width: 100%;
                 border-radius: 20px;
             }
