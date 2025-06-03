@@ -1,0 +1,118 @@
+@media (max-width:900px) {
+    .secNosotros {
+        height: 85vh;
+        padding: 0 60px;
+
+        & .secNosotrosContent {
+            width: 70%;
+
+            & h1 {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 15px;
+            }
+            & h2 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 7px;
+        }
+            & h3 {
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 7px;
+            }
+        }
+    }
+    
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        
+        &li {
+            margin-bottom: 25px;
+        }
+    }
+
+    .secProductos {
+
+        & h4 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .secNosotros {
+        height: 60vh;
+        padding: 0 20px;
+        background-position: 50% center;
+
+        & .secNosotrosContent {
+            width: 100%;
+            align-items: flex-start;
+
+            & h1 {
+                font-size: 33px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+            & h2 {
+                font-size: 25px;
+                line-height: 33px;
+                margin-bottom: 5px;
+        }
+            & h3 {
+                font-size: 13px;
+                line-height: 20px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        
+        &li {
+            margin-bottom: 25px;
+        }
+    }
+
+    .secProductos {
+
+        & h4 {
+            font-size: 24px;
+        }
+        
+        & .secProductosContent {
+            flex-direction: column;
+            align-items: center;
+
+            & .producto {
+                width: 90%;
+                margin: 15px 0;
+            }
+        }
+    }
+}

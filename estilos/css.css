@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
+@import url(media.css);
 
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
@@ -24,16 +25,32 @@ body{
     width: 100%;
 }
 
-h2{
-    font-size: 2rem;
-    margin-bottom: 15px;
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #474747;
+    margin-bottom: 10px;
+    font-family: "Faustina", sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    color: #474747;
+    margin-bottom: 10px;
     font-family: "Manrope", sans-serif;
 }
 
-p{
-    font-size: 1.125rem;
-    line-height: 1.6;
-    font-family: "Faustina", sans-serif;
+h4 {
+    font-size: 30px;
+    color: #474747;
+    margin: 0px 0px 25px 25px;
 }
 
 a{

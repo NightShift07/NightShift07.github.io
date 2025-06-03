@@ -12,12 +12,12 @@
     justify-content: flex-start;
 
     & .secNosotrosContent{
-        width: 50%;
+        width: 40%;
         display:flex;
         flex-direction: column;
         align-items: flex-end;
-        text-align: right;
-        color: darkgoldenrod;
+        text-align: left;
+        color: #474747;
     }
 }
 
@@ -39,7 +39,7 @@
             margin: 15px 0;
             padding: 10px 15px;
             border-radius: 25px;
-            border: 1px solid #000000;
+            border: 1px solid #474747;
             cursor: pointer;
 
             & img{
@@ -50,26 +50,25 @@
     }
 }
 
-.secServicios{
-    background-image: url('../img/servicios.jpg');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 80px;
-    background-color: #e0e0e0;
-    text-align: center;
-    width: 100%;
-}
-
 .secContacto{
     background-image: url('../img/contacto.jpg');
-    display: flex;
+    background-size: cover;
+    background-position: top center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 80px;
     background-color: #e0e0e0;
-    text-align: center;
+    height: 95vh;
     width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .secContactoContent{
+        width: 40%;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        color: #474747;
+    }
 }
