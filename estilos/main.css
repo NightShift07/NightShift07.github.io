@@ -12,10 +12,10 @@
     justify-content: flex-start;
 
     & .secNosotrosContent{
-        width: 40%;
+        width: 60%;
         display:flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         text-align: left;
         color: #474747;
     }

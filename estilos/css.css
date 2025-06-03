@@ -53,6 +53,12 @@ h4 {
     margin: 0px 0px 25px 25px;
 }
 
+p {
+    font-size: 15px;
+    color: #474747;
+    margin: 0px 0px 0px 0px;
+}
+
 a{
     text-decoration: none;
     font: 16px;
