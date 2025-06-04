@@ -9,7 +9,7 @@
     font-family: "Merriweather", sans-serif;
     background-image: url(../img/header_1920.jpg);
 
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 999;
