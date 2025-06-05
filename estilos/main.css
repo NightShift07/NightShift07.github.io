@@ -62,8 +62,19 @@
     display: flex;
     justify-content: flex-start;
 
+    & .secContactoHeader{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
     .secContactoContent{
-        width: 40%;
+        width: 65%;
         display:flex;
         flex-direction: column;
         align-items: flex-start;
@@ -81,7 +92,7 @@
             margin-bottom: 15px;
             border-radius: 5px;
             border: 1px solid #474747;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         & input[type="submit"]{
@@ -91,9 +102,9 @@
             border: 1px solid #474747;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 25px;
 
-            &:hover{
+            & :hover{
                 background-color: #252525;
                 color:#ffffff;
             }
