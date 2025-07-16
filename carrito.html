@@ -30,7 +30,29 @@
             <h1>Carrito de Compras</h1>
             <p>Tu carrito está vacío.</p>
             <div class="carrito-items">
-                <!-- Aquí se mostrarán los productos del carrito -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Eliminar</th>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se mostrarán los productos del carrito -->
+                        <tr>
+                            <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                            <td><img src="../img/productos/f1.jpg" alt="Cartoon Astronaut T-Shirts"></td>
+                            <td>Cartoon Astronaut T-Shirts</td>
+                            <td>$118.19</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$118.19</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="carrito-total">
                 <h2>Total: $0.00</h2>
