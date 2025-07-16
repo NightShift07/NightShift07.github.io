@@ -25,11 +25,18 @@
     </header>
     <!--Main-->
     <main>
-        <section class="secNosotros" id="secNosotros">
-            <div class="secNosotrosContent">
-                <h1>Somos Guitar World...</h1>
-                <h2>Tu mejor opción al momento de comprar, vender o alquilar instrumentos y/o equipamento relacionado al mundo de la musica.</h2>
-                <h3>En Guitar World, nos apasiona la música y queremos que todos tengan acceso a los mejores instrumentos y equipos.</h3>
+        <section class="secContacto" id="secContacto">
+            <div class="secContactoHeader" id="secContactoHeader">
+                <h4>Contacta con nosotros.</h4>
+                <h3>Completa el siguiente formulario con tus datos y envianos un mensaje, nosotros nos comunicaremos contigo lo antes posible.</h3>
+            </div>
+            <div class="secContactoContent" id="secContactoContent">
+                <form action="https://formspree.io/f/xdkgrrnl" method="POST">
+                <label for="frmName">Nombre:</label><br /><input type="text" name="frmName" id="frmName" placeholder="Escribe tu nombre" required><br />
+                <label for="frmEmail">Correo Electronico:</label><br /><input type="email" name="frmEmail" id="frmEmail" placeholder="Escribe tu email" required><br />
+                <label for="frmMsg">Mensaje:</label><br /><textarea name="frmMsg" id="frmMsg" rows="4" cols="50" placeholder="Escribe tu mensaje" required></textarea><br />
+                <input type="submit" value="Contactar">
+                </form>
             </div>
         </section>
     </main>
