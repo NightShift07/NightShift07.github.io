@@ -25,7 +25,7 @@ function showArtic(articulo){
             <h4>$ ${articulo.precio}</h4>
         </div>
         <a id="addProd${articulo.id}" class="carrito">
-            <i class="fal fa-shopping-cart"></i>
+            <i class="fi fi-rs-cart-arrow-down"></i>
         </a>
     </div>
     `;
