@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!--Estilos-->
     <link rel="stylesheet" href="estilos/css.css">
+    <link rel="stylesheet" href="estilos/carrito.css">
     <!--Titulo-->
     <title>Guitar World</title>
 </head>
@@ -17,37 +18,58 @@
     <!--Main-->
     <main>
         <!--Carrito-->
-        <section class="carrito">
-            <h1>Carrito de Compras</h1>
-            <p>Tu carrito está vacío.</p>
-            <div class="carrito-items">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Eliminar</th>
-                            <th>Imagen</th>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Aquí se mostrarán los productos del carrito -->
-                        <tr>
-                            <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
-                            <td><img src="../img/productos/f1.jpg" alt="Cartoon Astronaut T-Shirts"></td>
-                            <td>Cartoon Astronaut T-Shirts</td>
-                            <td>$118.19</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>$118.19</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section id="cart" class="carrito">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Eliminar</th>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán los productos del carrito -->
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="../img/productos/f1.jpg" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Aplicar Cupón</h3>
+                <div>
+                    <input type="text" placeholder="Ingresa tu cupón">
+                    <button class="normal">Aplicar</button>
+                </div>
             </div>
-            <div class="carrito-total">
-                <h2>Total: $0.00</h2>
-                <button class="btn-comprar">Comprar Ahora</button>
+
+            <div id="subtotal">
+                <h3>Total del Carrito</h3>
+                <table>
+                    <tr>
+                        <td>Subtotal del Carrito</td>
+                        <td id="total">$335</td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong id="total">$335</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceder al pago</button>
             </div>
         </section>
     </main>
@@ -56,5 +78,7 @@
     </footer>
     <script src="scripts/basic.js"></script>
     <script src="scripts/scripts.js"></script>
+
+    <script src="scripts/carrito.js"></script>
 </body>
 </html>
