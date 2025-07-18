@@ -1,4 +1,4 @@
-const API_URL = './api/productos.json'; // URL de la API de productos
+const API_URL = 'https://nightshift07.github.io/api/productos.json'; // URL de la API de productos
 let globProd = []; // Array para almacenar los productos globalmente
 
 async function loadApi(api) {
@@ -16,12 +16,13 @@ async function loadApi(api) {
 }
 
 function showArtic(articulo){
+    const dspModelo = articulo.modelo.substring(0, 45) + '...';
     return `
     <div class="producto">
         <img src="${articulo.image}" alt="${articulo.modelo}">
         <div class="producto-descripcion">
             <span>${articulo.marca}</span>
-            <h5>${articulo.modelo}</h5>
+            <h5>${dspModelo}</h5>
             <h4>$ ${articulo.precio}</h4>
         </div>
         <a id="addProd${articulo.id}" class="carrito">
@@ -49,7 +50,7 @@ function btnCarro(){
 }
 
 function addProdBag(articulo) {
-    let carro = JSON.parse(localStorage.getItem('carritoDeCompras')) || [];
+    let carro = JSON.parse(localStorage.getItem('lsCarro')) || [];
     const indexArticulo = carro.findIndex(item => item.id === articulo.id);
 
     if (indexArticulo !== -1) {
@@ -60,6 +61,7 @@ function addProdBag(articulo) {
         carro.push({
             id: articulo.id,
             modelo: articulo.modelo,
+            modelocorto: articulo.modelo.substring(0, 20) + '...',
             precio: articulo.precio,
             image: articulo.image,
             cantidad: 1,
@@ -67,14 +69,14 @@ function addProdBag(articulo) {
         });
     }
 
-    localStorage.setItem('carritoDeCompras', JSON.stringify(carro));
+    localStorage.setItem('lsCarro', JSON.stringify(carro));
     alert(`${articulo.modelo} agregado al carrito!`);
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadApi(API_URL); // Esperar a que se carguen los productos
+    await loadApi(API_URL);
     if (globProd.length > 0) {
         console.log(globProd)
-        wrtHtml(globProd); // Dibujar y adjuntar eventos
+        wrtHtml(globProd);
     }
 });
