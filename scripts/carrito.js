@@ -21,140 +21,110 @@ function loadProdBag() {
         carro.forEach(articulo => {
             const newFila = newArticulo(articulo);
             document.querySelector('#prodCarro').innerHTML += newFila;
-            subTotal += articulo.precio * articulo.cantidad;
+            subTotal += articulo.precio * articulo.cantidad.toFixed(2);
         });
     }
 
-    updTotal(subTotal);
+    updTotalBag(subTotal);
 
-    eventosFila();
+    funcEventos();
 }
 
 // ---------------------------------------------- //
 // Funciones auxiliares
 
 function newArticulo(articulo) {
-
-    const valArtic = (articulo.precio * articulo.cantidad);
-    console.log(articulo.precio, articulo.cantidad, valArtic);
+    const valArtic = (articulo.precio * articulo.cantidad).toFixed(2);
     return `
         <tr>
             <td>
-                <button id="${articulo.id}" class="remove-btn"><i class="fi fi-rs-cart-minus"></i></button>
+                <button id="${articulo.id}" class="btnBorrar"><i class="fi fi-rs-cart-minus"></i></button>
             </td>
             <td>
                 <img src="${articulo.image}" alt="${articulo.modelo}" style="height: 80px; width: auto; object-fit: contain;">
             </td>
             <td>${articulo.modelocorto}</td>
-            <td>$${articulo.precio}</td>
+            <td>$${articulo.precio.toFixed(2)}</td>
             <td>
-                <input type="number" value="${articulo.cantidad}" min="1" id="${articulo.id}" class="cantidad-articulo">
+                <input type="number" value="${articulo.cantidad}" min="1" id="${articulo.id}" class="cantArtic">
             </td>
             <td>$${valArtic}</td>
         </tr>
    `
 }
 
-function updTotal(subtotal) {
+function updTotalBag(subtotal) {
     document.querySelectorAll('#total').forEach(elemento => elemento.innerHTML = subtotal)
 }
 
 // ------------------------------------------------- //
 // Lógica para eliminar o cambiar cantidad
 
-function eventosFila() {
+function funcEventos() {
 
-    // Eventos para botones de eliminar
-    //const botonesEliminar = document.querySelectorAll('.remove-btn');
-    document.querySelectorAll('.remove-btn').forEach(boton => {
+    // Boton para eliminar articulo
+    document.querySelectorAll('.btnBorrar').forEach(boton => {
         boton.addEventListener('click', () => {
-            // Obtenemos el carrito
-            const carrito = JSON.parse(localStorage.getItem('lsCarro')) || [];
-            //obtenemos el id del boton
+            const carro = JSON.parse(localStorage.getItem('lsCarro')) || [];
             const productId = parseInt(boton.id);
-            // Encontrar el índice del articulo en el carrito
-            const indicearticulo = carrito.findIndex(articulo => articulo.id === productId);
-            //console.log(indicearticulo)
-            if (indicearticulo !== -1) {
-                // Eliminar el articulo del array
-                carrito.splice(indicearticulo, 1);
-
-                // Actualizar localStorage
-                localStorage.setItem('lsCarro', JSON.stringify(carrito));
-
-                // Recargar la vista del carrito
-                cargararticulosCarrito();
-
-                console.log(`articulo con ID ${productId} eliminado del carrito`);
+            const idArticulo = carro.findIndex(articulo => articulo.id === productId);
+            if (idArticulo !== -1) {
+                carro.splice(idArticulo, 1);
+                localStorage.setItem('lsCarro', JSON.stringify(carro));
+                loadProdBag();
+                alert(`Artículo eliminado del carrito!`);
             }
-
         });
     });
 
-
-    // Eventos para cambiar cantidad
-
+    // Modificar cantidad de articulos
     document.querySelectorAll('.cantidad-articulo').forEach(input => {
         input.addEventListener('change', () => {
-            // Obtenemos el carrito
-            const carrito = JSON.parse(localStorage.getItem('lsCarro')) || [];
-            // Obtener el input que fue modificado
+            const carro = JSON.parse(localStorage.getItem('lsCarro')) || [];
             const input = document.activeElement;
             const productId = parseInt(input.id);
-            const nuevaCantidad = parseInt(input.value);
+            const newCant = parseInt(input.value);
 
-            // Validar que la cantidad sea válida
-            if (nuevaCantidad < 1) {
+            if (newCant < 1) {
                 input.value = 1;
                 return;
             }
 
-            // Encontrar el articulo en el carrito
-            const articulo = carrito.find(item => item.id === productId);
-
+            const articulo = carro.find(item => item.id === productId);
             if (articulo) {
-                // Actualizar la cantidad
-                articulo.cantidad = nuevaCantidad;
-
-                // Actualizar localStorage
-                localStorage.setItem('lsCarro', JSON.stringify(carrito));
-
-                // Recalcular y actualizar solo los totales (sin recargar toda la tabla)
-                actualizarTotales();
-
-                console.log(`Cantidad del articulo ID ${productId} actualizada a ${nuevaCantidad}`);
+                articulo.cantidad = newCant;
+                localStorage.setItem('lsCarro', JSON.stringify(carro));
+                updTotales();
+                console.log(`Cantidad del articulo ID ${productId} actualizada a ${newCant}`);
             }
         });
     });
 
 }
 
-function actualizarTotales() {
-    // Obtenemos el carrito
-    const carrito = JSON.parse(localStorage.getItem('lsCarro')) || [];
+function updTotales() {
+    const carro = JSON.parse(localStorage.getItem('lsCarro')) || [];
     let subTotal = 0;
 
-    // Recalcular subtotal
-    carrito.forEach(articulo => {
-        subTotal += articulo.price * articulo.cantidad;
+    carro.forEach(articulo => {
+        subTotal += articulo.precio * articulo.cantidad.toFixed(2);
     });
 
-    // Actualizar subtotales individuales en la tabla
     const filas = document.querySelectorAll('#prodCarro tr');
     filas.forEach(fila => {
-        const input = fila.querySelector('.cantidad-articulo');
+        const input = fila.querySelector('.cantArtic');
         if (input) {
             const productId = parseInt(input.id);
-            const articulo = carrito.find(item => item.id === productId);
+            const articulo = carro.find(item => item.id === productId);
             if (articulo) {
-                const subtotalCelda = fila.cells[5]; // La celda del subtotal es la sexta (índice 5)
-                const subtotalarticulo = (articulo.price * articulo.cantidad).toFixed(2);
+                const subtotalCelda = fila.cells[5];
+                const subtotalarticulo = (articulo.precio * articulo.cantidad).toFixed(2);
                 subtotalCelda.textContent = `$${subtotalarticulo}`;
             }
         }
     });
 
     // Actualizar el total general
-    updTotal(subTotal);
+    updTotalBag(subTotal);
 }
 

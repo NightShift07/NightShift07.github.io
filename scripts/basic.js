@@ -6,7 +6,6 @@ const codeHeader =`
             <li><a href="./tienda.html"><i class="fi fi-rs-shop"></i> - Productos</a></li>
             <li><a href="./contacto.html"><i class="fi fi-rs-phone-guide"></i> - Contacto</a></li>
             <li><a href="./carrito.html"><i class="fi fi-rs-shopping-cart-check"></i> - Carrito</a></li>
-            <li><a href="./login.html"><i class="fi fi-rs-user"></i> - Login</a></li>
         </ul>
     </div>
     `;
