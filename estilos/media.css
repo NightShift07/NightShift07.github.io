@@ -90,6 +90,15 @@
             }
         }
     }
+
+    .bagTotales {
+        flex-direction: column;
+    }
+
+    #subtotal {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width:600px) {
@@ -193,6 +202,31 @@
             & input[type="submit"]{
                 padding: 15px 20px;
                 font-size: 15px;
+            }
+        }
+    }
+
+    .carrito{
+        padding: 20px;
+        
+        table{
+            td:nth-child(1) {
+                width: 60px;
+            }
+
+            td:nth-child(2), td:nth-child(4), td:nth-child(6) {
+                width: 80px;
+            }
+
+            td:nth-child(3) {
+                width: 150px;
+            }
+            td:nth-child(5) {
+                width: 70px;
+            }
+
+            td:nth-child(5) input {
+                width: 40px;
             }
         }
     }
