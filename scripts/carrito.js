@@ -54,7 +54,7 @@ function newArticulo(articulo) {
 }
 
 function updTotalBag(subtotal) {
-    document.querySelectorAll('#total').forEach(elemento => elemento.innerHTML = subtotal)
+    document.querySelectorAll('#total').forEach(elemento => elemento.innerHTML = subtotal.toFixed(2));
 }
 
 // ------------------------------------------------- //
@@ -78,7 +78,7 @@ function funcEventos() {
     });
 
     // Modificar cantidad de articulos
-    document.querySelectorAll('.cantidad-articulo').forEach(input => {
+    document.querySelectorAll('.cantArtic').forEach(input => {
         input.addEventListener('change', () => {
             const carro = JSON.parse(localStorage.getItem('lsCarro')) || [];
             const input = document.activeElement;
@@ -124,7 +124,6 @@ function updTotales() {
         }
     });
 
-    // Actualizar el total general
     updTotalBag(subTotal);
 }
 
