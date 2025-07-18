@@ -3,7 +3,7 @@
     "id": 1,
     "marca": "Hartke",
     "modelo": "Amplificador Hartke HD75 de 75W",
-    "precio": "879.923,00",
+    "precio": 879.923,
     "categoria": "Amplificadores",
     "image": "img/productos/prod01.png",
     "stock": 5
@@ -12,7 +12,7 @@
     "id": 2,
     "marca": "Vox",
     "modelo": "Combo Hibrido Vox Cambridge50 De 50W Celestion 1x12 VX12",
-    "precio": "882.878,00",
+    "precio": 882.878,
     "categoria": "Amplificadores",
     "image": "img/productos/prod02.png",
     "stock": 2
@@ -21,7 +21,7 @@
     "id": 3,
     "marca": "PRS",
     "modelo": "Guitarra Electrica | SE McCarty 594 | Tapa de Laurel Burl | RWN | Funda | Color Vintage Sunburst",
-    "precio": "2.914.971,00",
+    "precio": 2.914.971,
     "categoria": "Guitarras",
     "image": "img/productos/prod03.png",
     "stock": 6
@@ -30,7 +30,7 @@
     "id": 4,
     "marca": "Fender",
     "modelo": "Guitarra Electroacústica Fender CC-60SCE 12 cuerdas c/Corte Fishman Natural",
-    "precio": "880.107,00",
+    "precio": 880.107,
     "categoria": "Guitarras",
     "image": "img/productos/prod04.png",
     "stock": 8
@@ -39,7 +39,7 @@
     "id": 5,
     "marca": "Ovation",
     "modelo": "Guitarra Electroacústica Ovation Celebrity Standard CS28 Tiger Eye",
-    "precio": "884.405,00",
+    "precio": 884.405,
     "categoria": "Guitarras",
     "image": "img/productos/prod05.png",
     "stock": 12
@@ -48,7 +48,7 @@
     "id": 6,
     "marca": "Shure",
     "modelo": "Microfono + Interfaz de Audio | 2 Ch | p/computadoras, tabletas y celulares. Conecta cualquier micrófono o instrumento XLR a través de la entrada combinada XLR y ¼” | APP Motiv",
-    "precio": "829.428,00",
+    "precio": 829.428,
     "categoria": "Microfonos",
     "image": "img/productos/prod06.png",
     "stock": 4
@@ -57,7 +57,7 @@
     "id": 7,
     "marca": "Ross",
     "modelo": "Mixer | 12 canales | 12 XLR/TRS | Bluetooth | Reproductor USB | EQ gráfico 7 bandas | Efectos | Phanton Power | Salidas auri/grabador",
-    "precio": "557.943,00",
+    "precio": 557.943,
     "categoria": "Consolas",
     "image": "img/productos/prod07.png",
     "stock": 5
@@ -66,7 +66,7 @@
     "id": 8,
     "marca": "Mackie",
     "modelo": "Consola Mixer 12 Canales | Preamps Onyx | Usb | Efectos",
-    "precio": "887.515,00",
+    "precio": 887.515,
     "categoria": "Consolas",
     "image": "img/productos/prod08.png",
     "stock": 3
@@ -75,7 +75,7 @@
     "id": 9,
     "marca": "Hartke",
     "modelo": "Pedal De Efecto | Bass Looper | 99 Bancos | Memoria 6 Horas | 20 Ritmos | Puerto Usb | Chasis Metalico",
-    "precio": "275.507,00",
+    "precio": 275.507,
     "categoria": "Pedales",
     "image": "img/productos/prod09.png",
     "stock": 4
@@ -84,7 +84,7 @@
     "id": 10,
     "marca": "Pearl",
     "modelo": "Redoblante PEARL Professional Series De 14x8 Color Matte Mocha Swirl",
-    "precio": "878.694,00",
+    "precio": 878.694,
     "categoria": "Baterias",
     "image": "img/productos/prod10.png",
     "stock": 2
@@ -93,7 +93,7 @@
     "id": 11,
     "marca": "Samson",
     "modelo": "Samson Dk707 Set De 7 Micrófonos Para Batería X 4 Q72 Tom | X 1 Q71 Bombo | 2X Oh Overhead | Con Soportes Y Estuche Rigido",
-    "precio": "887.001,00",
+    "precio": 887.001,
     "categoria": "Microfonos",
     "image": "img/productos/prod11.png",
     "stock": 1
@@ -102,7 +102,7 @@
     "id": 12,
     "marca": "Zildjian",
     "modelo": "Set Platillos Zildjian Low Volume lv80 + Parches Remo Silenstroke",
-    "precio": "887.101,00",
+    "precio": 887.101,
     "categoria": "Baterias",
     "image": "img/productos/prod12.png",
     "stock": 8

@@ -34,7 +34,9 @@ function loadProdBag() {
 // Funciones auxiliares
 
 function newArticulo(articulo) {
+
     const valArtic = (articulo.precio * articulo.cantidad);
+    console.log(articulo.precio, articulo.cantidad, valArtic);
     return `
         <tr>
             <td>
@@ -130,11 +132,11 @@ function eventosFila() {
 function actualizarTotales() {
     // Obtenemos el carrito
     const carrito = JSON.parse(localStorage.getItem('lsCarro')) || [];
-    let subtotalCalculado = 0;
+    let subTotal = 0;
 
     // Recalcular subtotal
     carrito.forEach(articulo => {
-        subtotalCalculado += articulo.price * articulo.cantidad;
+        subTotal += articulo.price * articulo.cantidad;
     });
 
     // Actualizar subtotales individuales en la tabla
@@ -153,6 +155,6 @@ function actualizarTotales() {
     });
 
     // Actualizar el total general
-    actualizarTotalCarrito(subtotalCalculado);
+    updTotal(subTotal);
 }
 
