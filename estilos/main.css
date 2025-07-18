@@ -241,3 +241,33 @@
         font-size: 1rem;
     }
 }
+
+.cntFrmContacto.error{
+    input, textarea {
+        border-color: #ff0000;
+    }
+
+    .txtErrorFrm {
+        display: block;
+    }
+}
+
+.cntFrmContacto .txtErrorFrm {
+    color: #ff0000;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+}
+
+.mensaje-error-dinamico {
+    color: #d9534f;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.campo-con-error {
+    border: 1px solid #d9534f !important;
+    /* Borde rojo */
+}
